@@ -58,5 +58,5 @@ class User(AbstractBaseUser,PermissionsMixin):
         refresh = RefreshToken.for_user(self)
         return {
             'refresh':str(refresh),
-            'accress':str(refresh.access_token),
+            'access':str(refresh.access_token),
         }
